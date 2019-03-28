@@ -22,5 +22,8 @@
         <source-file src="src/ios/VoIPPushNotification.m" />
 
         <framework src="PushKit.framework" />
+
+		<hook type="after_plugin_install" src="hooks/voip.js" />
+		<hook type="before_build" src="hooks/voip.js" />
     </platform>
 </plugin>
